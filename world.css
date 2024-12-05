@@ -1,1 +1,158 @@
-/* Add your own styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #7b1fa2 0%, #ba68c8 100%); /* Purple gradient background */
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ce93d8; /* Light purple background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #6a1b9a; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 img {
+    width: 100px;  /* Size of the image */
+    height: 100px; /* Equal to width to create a square */
+    border-radius: 50%; /* Makes the image circular */
+    vertical-align: middle;  /* Align the image vertically with the text */
+    margin-right: 10px;
+}
+
+#image-section {
+    width: 100%;
+    background-image: url('purpleglobe.jpg.webp'); /* Assuming you want a purple-themed image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    margin-bottom: 70px;
+}
+
+#image-section h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+/* Container for the search area */
+.search-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Input and Button Styles */
+#country {
+    width: 80%;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f3e5f5;
+}
+
+#country:focus {
+    border-color: #6a1b9a;
+}
+
+#lookup, #lookup-cities {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6a1b9a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#lookup:hover, #lookup-cities:hover {
+    background-color: #d1c4e9;
+}
+
+/* Results Section */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ce93d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Center the table */
+table {
+    margin: 20px auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Collapses the borders of the table */
+    width: 80%; /* Adjust the table width */
+}
+
+/* Table header styles */
+th {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table data styles */
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #country, #lookup {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table {
+        width: 100%; /* Make table responsive on smaller screens */
+    }
+}
